@@ -1,7 +1,9 @@
 <?php
 
-function generatePassword($length) {
-    $dictionary = "abcdefghijklmnopqrstuvwxyz0123456789!?&%$<>^+-*/()[]{}@#_=";
+function generatePassword($dictionary, $length) {
+
+    //dizionario adesso ci viene passato già popolato
+    //bisogna solo calcolare quanti caratteri contiene
     $ultimoIndiceDizionario = strlen($dictionary) - 1;
 
     $password = "";
